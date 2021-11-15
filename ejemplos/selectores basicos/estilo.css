@@ -1,0 +1,34 @@
+h1{
+    background: red;
+}
+
+h3{
+    background: blue;
+}
+
+
+p{
+    background: yellow;
+}
+
+
+.declase{
+    background: pink;
+}
+
+
+#id1{
+    background: green;
+}
+
+#id2{
+    background: green;
+}
+
+body{
+    background: cyan;
+}
+
+*{
+    background: brown;
+}
