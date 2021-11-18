@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas | Ejemplo 1</title>
+</head>
+<body>
+
+
+
+    
+<table style="border:1px solid black"> 
+    <caption>Tabla 1</caption>
+    <tr>
+        <th>Artículo 1</th>
+        <td>Precio 1</td>
+    </tr>
+    <tr>
+        <th>Artículo 2</th>
+        <td>Precio 2</td>
+    </tr>
+</table>
+
+
+
+<br>
+<br>
+
+
+<!-- rules="groups es para que se distinga mejor la agrupación, y el border="1" es para visualizar el borde de la
+tabla este atributo no es recomendado  -->
+<table border="1" rules="groups">
+    <caption>Ventas por secciones</caption>
+    <thead>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Hardware</td>
+            <td>Software</td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Total</th>
+            <th>25000</th>
+            <th>22000</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <th>Enero</th>
+            <td>12000</td>
+            <td>15000</td>
+        </tr>
+        <tr>
+            <th>Febrero</th>
+            <td>13000</td>
+            <td>9000</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+<table>
+    <colgroup>
+        <col style="background-color: gray">
+        <col span="2" style="background-color:yellow;">
+    </colgroup>    <thead>
+        <tr style="background-color: black; color:white">
+            <th>País</th>
+            <th>Capital</th>
+            <th>Otras ciudades</th>
+        </tr>
+     </thead>
+    <tbody>
+        <tr>
+            <th>España</th>
+            <td>Madrid</td>
+            <td>Barcelona, Zaragoza, Sevilla, Valencia, 
+                Bilbao</td>
+        </tr>
+        <tr>
+            <th>Francia</th>
+            <td>París</td>
+            <td>Lyon, Marsella, Nantes, Toulouse</td>
+        </tr>
+        <tr>
+            <th>Portugal</th>
+            <td>Lisboa</td>
+            <td>Oporto, Coimbra</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+    
+</body>
+</html>
