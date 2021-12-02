@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo grid 1</title>
+
+
+    <style>
+
+        .contenedor-grid{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            /*Aquí usamos las unidades que queramos, 1fr es una parte proporcional*/
+
+            grid-template-rows: 1fr 1fr 2fr;
+
+            /*
+            column-gap-> Separación entre columnas
+            row-gap-> Separación entre filas
+            grid-gap-> Sepración filas-columnas
+            */
+            
+
+        }
+
+        .elemento-grid1{
+            background-color: brown;
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+
+        .elemento-grid2{
+            background-color: cyan;
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .elemento-grid3{
+            background-color: magenta;
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+
+        .elemento-grid3:hover{
+            background-color: green;
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+
+
+        .elemento-grid4{
+            /*
+            display: flex;
+            justify-content: flex-start;  
+            */          
+            background-color: yellow;
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <div class="contenedor-grid">
+        <div class="elemento-grid1">Primer ELEMENTO</div>
+        <div class="elemento-grid2">Segundo ELEMENTO</div>
+        <div class="elemento-grid3">Tercer ELEMENTO</div>
+        <div class="elemento-grid4"><img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2014/11/73239-30-anos-informatica-domestica-espana-zx-spectrum-chromebooks.jpg?itok=3e49wuZl" width="45%"></div>
+
+    </div>
+    
+</body>
+</html>
