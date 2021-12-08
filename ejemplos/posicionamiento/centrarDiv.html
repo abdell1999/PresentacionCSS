@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrar un div</title>
+
+    <style>
+        /*
+        Si mueves un contenedor con posicionamiento absoluto que esta en el top, los elementos que hay debajo
+        suben y ocupan su posición que ahora esta libre.
+
+
+
+        También se pude jugar con los porcentajes de los margenes
+        */
+
+        .contenedor{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            position: absolute;
+            top: 48%;
+            left: 48%;
+        }
+        .contenedor2{
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            position: absolute;
+            top: 28%;
+            left: 28%;
+        }
+        .circulo{
+            width: 70px;
+            height: 70px;
+            background-color: yellow;
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            border-radius: 50%;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="contenedor"></div>
+    <div class="contenedor2">
+        <div class="circulo"></div>
+    </div>
+    
+
+
+    
+    
+</body>
+</html>
