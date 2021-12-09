@@ -14,15 +14,31 @@
 
 
         También se pude jugar con los porcentajes de los margenes
+
+
+        El static modifica el flujo.
+        absoulute le dices let y top y se acabo.
+        el fijo hace que siempre este en esa posición.
+        Depende del contenedor
+
+
+        Javascript-> Es un lenguaje de scripting(definir->) cuyo objetivo es darle dinaminismo  a las paginas web (web 2.0).
+        Interpretado, poco tipado, 
+
+
         */
 
         .contenedor{
-            width: 100px;
-            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
             background-color: tomato;
             position: absolute;
             top: 48%;
             left: 48%;
+            border-radius: 100%;
         }
         .contenedor2{
             width: 200px;
@@ -35,11 +51,18 @@
         .circulo{
             width: 70px;
             height: 70px;
-            background-color: yellow;
+            background-color: yellowgreen;
             position: absolute;
             top: 35%;
             left: 35%;
             border-radius: 50%;
+        }
+
+        .circulillo{
+            width: 50px;
+            height: 50px;
+            background-color: lightseagreen;
+            border-radius: 100%;
         }
 
     </style>
@@ -50,7 +73,9 @@
 <body>
 
 
-    <div class="contenedor"></div>
+    <div class="contenedor">
+        <div class="circulillo"></div>
+    </div>
     <div class="contenedor2">
         <div class="circulo"></div>
     </div>
